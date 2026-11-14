@@ -66,7 +66,7 @@ Folder `database/migrations/` berisi **dua file**: `2026_11_01_000001_buat_skema
 Kalau masih ada file migration lama berawalan `2026_10_`, hapus semuanya. Kalau tidak, `migrate` gagal dengan pesan `Table 'instansi' already exists`, dan hampir semua test ikut gagal.
 
 Menjalankan pengujian: `php artisan test` (SQLite di memori, butuh ekstensi `pdo_sqlite`).
-Hasil terakhir: 161 test, 1175 assertion, 159 lulus dan 2 gagal (dua kegagalan lama, lihat `CLAUDE.md` bagian 6). Empat test di antaranya memakai perintah khusus SQLite (`PRAGMA`), jadi hanya berjalan di SQLite. `migrate:fresh --seed` dan seluruh endpoint juga sudah dicoba di MariaDB 10.11 memakai `database/disty_helpdesk.sql`.
+Hasil terakhir: 161 test, 1175 assertion, 159 lulus dan 2 gagal. Empat test di antaranya memakai perintah khusus SQLite (`PRAGMA`), jadi hanya berjalan di SQLite. `migrate:fresh --seed` dan seluruh endpoint juga sudah dicoba di MariaDB 10.11 memakai `database/disty_helpdesk.sql`.
 
 ## Akun awal (khusus pengembangan)
 
