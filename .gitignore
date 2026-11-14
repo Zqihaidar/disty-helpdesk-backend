@@ -1,0 +1,19 @@
+# dependency
+vendor/
+node_modules/
+
+# rahasia
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+# data dan log lokal
+*.sqlite
+*.log
+.phpunit.result.cache
+
+# editor dan OS
+.idea/
+.vscode/
+.DS_Store
